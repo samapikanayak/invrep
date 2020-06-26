@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+th{
+
+color:red;
+font-size:25px;
+}
+td{
+margin-left:10px;
+font-size:20px;
+color:blue;
+margin:15px;
+text-align:center;
+}
+#em{
+color:green;
+margin-left:5px;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}_{{invid}}</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Invoice Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Amount Paid</th>
+        </thead>
+        <tr>
+            <td>{{invid}}</td>
+            <td>{{name}}</td>
+            <td id = "em">{{email}}</td>
+            <td>{{phn}}</td>
+            <td>{{amount}}.00 Rupees</td>
+        </tr>
+        </table>   
+</body>
+</html>
+
+ 

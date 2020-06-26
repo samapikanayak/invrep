@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{
+            background-color: navajowhite;
+            margin-left:450px;
+            margin-top:100px;
+            border-radius: 10px;
+            height:400px;
+            width: 600px;
+            padding-top: 116px;
+            padding-left:62px;
+            font-size:25px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="box">
+    <form action="" method="POST">
+        {%csrf_token%}
+        {% if pdm %}
+           <span style="color:red;"> {{pdm}}</span>
+        {%endif%}
+        <br>
+        <br>
+        <label for="un">Username</label>
+        <input type="text" name="username" id="un" required>
+        <br><br>
+        <label for="pw">Password</label>
+        <input type="password" name="pwd" id="pw" required>
+        <br><br>
+        <input type="submit" value="Login">
+        <br>
+        <br>
+        Didi not Have account ? <a href="/signup">Sign Up Here</a>
+    </form>
+</div>
+</body>
+</html>
